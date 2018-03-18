@@ -17,5 +17,11 @@ functions:
   app:
     handler: index.handler
     events:
-      - http: ANY /courses
+      - http: ANY /
       - http: 'ANY {proxy+}'
+      
+  showCourses:
+    handler: index.handler
+    events:
+      - http: ANY /courses
+      
